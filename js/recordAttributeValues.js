@@ -4,7 +4,7 @@
  * @param {string} attributes 
  * @returns Array<string>
  */
-function recordAttributeValues(htmlTag, attributes ) {
+function recordAttributeValues(htmlTag, attributes) {
   const imgTags = document.getElementsByTagName(htmlTag);
   const fileValues = [];
   for (let i = 0; i < imgTags.length; i++) {
