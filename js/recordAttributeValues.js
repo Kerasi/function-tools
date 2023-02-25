@@ -1,19 +1,19 @@
 /**
  * @description 根据传入的标签属性，获取相对应的值
- * @param {string} htmlTag 
- * @param {string} attributes 
- * @returns Array<string>
+ * @param {string} HTMLTag 
+ * @param {string} attr 
+ * @returns {string[]} attrValues
  */
-function recordAttributeValues(htmlTag, attributes) {
-  const imgTags = document.getElementsByTagName(htmlTag);
-  const fileValues = [];
-  for (let i = 0; i < imgTags.length; i++) {
-    const fileValue = imgTags[i].getAttribute(attributes);
+function recordAttributeValues(HTMLTag, attr) {
+  const tag = document.getElementsByTagName(HTMLTag);
+  const attrValues = [];
+  for (let i = 0; i < tag.length; i++) {
+    const attrValue = tag[i].getAttribute(attr);
     // Filter null value
-    if (fileValue) {
-        fileValues.push(fileValue);
+    if (attrValue) {
+      attrValues.push(attrValue);
     }
     
   }
-  return fileValues;
+  return attrValues;
 };
