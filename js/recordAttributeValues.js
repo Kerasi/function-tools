@@ -1,5 +1,5 @@
 /**
- * @description 根据传入的标签属性，获取相对应的值
+ * @description 根据传入的标签属性，获取浏览器 HTML 节点相对应属性值
  * @param {string} HTMLTag 
  * @param {string} attr 
  * @returns {string[]} attrValues
