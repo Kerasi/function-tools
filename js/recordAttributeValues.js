@@ -17,3 +17,8 @@ function recordAttributeValues({ HTMLTag, attr }) {
   }
   return attrValues;
 };
+
+// e.g.
+const option = { ele: 'a', HTMLTag: 'img', attr: 'file', user_name: 'aaa' };
+const res = recordAttributeValues(option);
+console.log(res); // 返回结果集只针对 HTMLTag 和 attr 两个属性传入处理，其他不影响
